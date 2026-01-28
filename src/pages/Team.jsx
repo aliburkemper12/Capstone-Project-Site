@@ -1,35 +1,36 @@
 import '/src/Team.css';
+import ABHeadshot from '/ab-headshot.jpeg';
 
 function Team() {
   const teamMembers = [
     {
-      name: "Team Member 1",
+      name: "Ali Burkemper",
+      bio: "Senior studying Computer Science at the University of Alabama.",
+      email: "aeburkemper@crimson.ua.com",
+      photo: ABHeadshot
+    },
+    {
+      name: "Brody Greene",
       bio: "Brief bio",
-      email: "member1@email.com",
+      email: "bjgreene@crimson.ua.edu",
       photo: null
     },
     {
-      name: "Team Member 2",
+      name: "Sophia Kyemba",
       bio: "Brief bio",
-      email: "member2@email.com",
+      email: "snkyemba@crimson.ua.edu",
       photo: null
     },
     {
-      name: "Team Member 3",
+      name: "Will Mulhern",
       bio: "Brief bio",
-      email: "member3@email.com",
+      email: "wrmulhern@crimson.ua.edu",
       photo: null
     },
     {
-      name: "Team Member 4",
+      name: "Zander Steffey",
       bio: "Brief bio",
-      email: "member4@email.com",
-      photo: null
-    },
-    {
-      name: "Team Member 5",
-      bio: "Brief bio",
-      email: "member5@email.com",
+      email: "arsteffey@crimson.ua.edu",
       photo: null
     },
     
