@@ -1,4 +1,6 @@
 import '/src/Home.css';
+import { Link } from "react-router-dom";
+
 
 function Home() {
   return (
@@ -51,8 +53,8 @@ function Home() {
           <h3>Explore Our Progress</h3>
           <p>Check out our deliverables and meet the team behind this project</p>
           <div className="cta-buttons">
-            <a href="/deliverables" className="btn btn-primary">View Deliverables</a>
-            <a href="/team" className="btn btn-secondary">Meet the Team</a>
+            <Link to="/deliverables" className="btn btn-primary">View Deliverables</Link>
+            <Link to="/team" className="btn btn-secondary">Meet the Team</Link>
           </div>
         </div>
       </div>

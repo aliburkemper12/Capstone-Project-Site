@@ -10,7 +10,7 @@ function Deliverables() {
           name: "Preliminary Presentation",
           type: "Presentation",
           date: "January 2026",
-          link: "/public/presentations/EEGPrelimPres.pptx.pdf"
+          link: "presentations/EEGPrelimPres.pptx.pdf"
         },
         // {
         //   // name: "Project Proposal Document",
