@@ -10,3 +10,8 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+<script>
+  if (!window.location.hash) {
+    window.location.replace(window.location.href + '#/');
+  }
+</script>
