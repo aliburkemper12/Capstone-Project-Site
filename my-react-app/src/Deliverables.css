@@ -1,0 +1,139 @@
+.deliverables {
+  width: 100%;
+}
+
+/* Sprint Card */
+.sprint-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sprint-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sprint-badge {
+  background: linear-gradient(135deg, #1e3a5f 0%, #152943 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sprint-header h2 {
+  color: #2d3748;
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+/* Deliverables Grid */
+.deliverables-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.deliverable-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.deliverable-item:hover {
+  background: white;
+  border-color: #1e3a5f;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
+}
+
+.deliverable-icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #547bad;
+  color: white;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.icon-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.deliverable-info {
+  flex: 1;
+}
+
+.deliverable-info h3 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.deliverable-type {
+  color: #1e3a5f;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.deliverable-date {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.deliverable-arrow {
+  font-size: 1.5rem;
+  color: #1e3a5f;
+  transition: transform 0.3s;
+}
+
+.deliverable-item:hover .deliverable-arrow {
+  transform: translateX(5px);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sprint-card {
+    padding: 1.5rem;
+  }
+
+  .deliverable-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .deliverable-arrow {
+    display: none;
+  }
+}
