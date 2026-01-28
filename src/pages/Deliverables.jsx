@@ -12,38 +12,38 @@ function Deliverables() {
           date: "January 2026",
           link: "/public/presentations/EEGPrelimPres.pptx.pdf"
         },
-        {
-          // name: "Project Proposal Document",
-          // type: "Document",
-          // date: "",
-          // link: "#"
-        }
+        // {
+        //   // name: "Project Proposal Document",
+        //   // type: "Document",
+        //   // date: "",
+        //   // link: "#"
+        // }
       ]
     },
-    {
-      number: 2,
-      title: "Sprint 2 - Real Time ERP Detection",
-      deliverables: [
-        {
-          // name: "Progress Presentation",
-          // type: "Presentation",
-          // date: "",
-          // link: "#"
-        }
-      ]
-    },
-    {
-      number: 2,
-      title: "Sprint 3 - Flanker Task Tool and Data Visualization",
-      deliverables: [
-        {
-          // name: "Progress Presentation",
-          // type: "Presentation",
-          // date: "",
-          // link: "#"
-        }
-      ]
-    },
+    // {
+    //   number: 2,
+    //   title: "Sprint 2 - Real Time ERP Detection",
+    //   deliverables: [
+    //     {
+    //       // name: "Progress Presentation",
+    //       // type: "Presentation",
+    //       // date: "",
+    //       // link: "#"
+    //     }
+    //   ]
+    // },
+    // {
+    //   number: 2,
+    //   title: "Sprint 3 - Flanker Task Tool and Data Visualization",
+    //   deliverables: [
+    //     {
+    //       // name: "Progress Presentation",
+    //       // type: "Presentation",
+    //       // date: "",
+    //       // link: "#"
+    //     }
+    //   ]
+    // },
   ];
 
   return (
