@@ -6,6 +6,9 @@ function Home() {
       <div className="hero-section">
         <h1 className="hero-title">Exploring Low Cost EEG-Based Error Potentials</h1>
         <p className="hero-subtitle">CS-495 Capstone Project</p>
+        <div className="hero-image">
+          <img src="./public/eeg.jpg" alt="EEG" />
+        </div>
       </div>
 
       <div className="content-section">
