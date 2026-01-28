@@ -1,5 +1,6 @@
 import '/src/Team.css';
 import ABHeadshot from '/ab-headshot.jpeg';
+import SKHeadshot from '/KyembaHeadshot.jpg';
 
 function Team() {
   const teamMembers = [
@@ -17,9 +18,9 @@ function Team() {
     },
     {
       name: "Sophia Kyemba",
-      bio: "Brief bio",
+      bio: "Senior majoring in computer science and minoring in mathematics from Huntsville, AL.",
       email: "snkyemba@crimson.ua.edu",
-      photo: null
+      photo: SKHeadshot
     },
     {
       name: "Will Mulhern",
