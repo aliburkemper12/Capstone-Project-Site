@@ -1,6 +1,9 @@
 import '/src/Team.css';
 import ABHeadshot from '/ab-headshot.jpeg';
 import SKHeadshot from '/KyembaHeadshot.jpg';
+import BGHeadshot from '/bg_headshot.jpeg';
+import WMHeadshot from '/WMHeadshot.JPG';
+import ASHeadshot from '/ASHeadshot.jpeg';
 
 function Team() {
   const teamMembers = [
@@ -12,27 +15,27 @@ function Team() {
     },
     {
       name: "Brody Greene",
-      bio: "Brief bio",
+      bio: "Senior majoring in Computer Science and Mathematics at The University of Alabama",
       email: "bjgreene@crimson.ua.edu",
-      photo: null
+      photo: BGHeadshot
     },
     {
       name: "Sophia Kyemba",
-      bio: "Senior majoring in computer science and minoring in mathematics from Huntsville, AL.",
+      bio: "Senior majoring in Computer Science and minoring in Mathematics from Huntsville, AL.",
       email: "snkyemba@crimson.ua.edu",
       photo: SKHeadshot
     },
     {
       name: "Will Mulhern",
-      bio: "Brief bio",
+      bio: "Senior majoring in Computer Science and minoring in Mathematics and RRSP from Arvada, Colorado.",
       email: "wrmulhern@crimson.ua.edu",
-      photo: null
+      photo: WMHeadshot
     },
     {
       name: "Zander Steffey",
-      bio: "Brief bio",
+      bio: "Computer Science student at the University of Alabama pursuing an MBA with interests in software and product development.",
       email: "arsteffey@crimson.ua.edu",
-      photo: null
+      photo: ASHeadshot
     },
     
   ];
