@@ -28,7 +28,7 @@ function Deliverables() {
           name: "Sprint 1 Planning Document",
           type: "Document",
           date: "February 2026",
-          link: "deliverables/Sprint1PlanningDoc.pdf"
+          link: "deliverables/Sprint1PlanningDocument.pdf"
         }
       ]
     },
