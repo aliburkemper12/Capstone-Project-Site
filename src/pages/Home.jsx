@@ -1,5 +1,6 @@
 import '/src/Home.css';
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 
 
 function Home() {
@@ -48,13 +49,28 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="cta-section">
           <h3>Explore Our Progress</h3>
           <p>Check out our deliverables and meet the team behind this project</p>
+
           <div className="cta-buttons">
-            <Link to="/deliverables" className="btn btn-primary">View Deliverables</Link>
-            <Link to="/team" className="btn btn-secondary">Meet the Team</Link>
+            <Link to="/deliverables" className="btn btn-primary">
+              View Deliverables
+            </Link>
+
+            <Link to="/team" className="btn btn-secondary">
+              Meet the Team
+            </Link>
+
+            <a
+              href="https://github.com/wrmulhern/CS495-EEG-Based-Error-Potentials"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-github"
+            >
+              <FaGithub style={{ marginRight: "8px" }} />
+              View GitHub Repo
+            </a>
           </div>
         </div>
       </div>

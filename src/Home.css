@@ -128,6 +128,18 @@
   flex-wrap: wrap;
 }
 
+.btn-github {
+  background-color: #6CC644;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-github:hover {
+  background-color: #1b1f23;
+  border: #6CC644, 2px solid;
+}
+
 .btn {
   padding: 0.9rem 2rem;
   border-radius: 8px;

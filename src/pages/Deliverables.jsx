@@ -10,14 +10,26 @@ function Deliverables() {
           name: "Preliminary Presentation",
           type: "Presentation",
           date: "January 2026",
-          link: "presentations/EEGPrelimPres.pptx.pdf"
+          link: "deliverables/EEGPrelimPres.pptx.pdf"
         },
-        // {
-        //   // name: "Project Proposal Document",
-        //   // type: "Document",
-        //   // date: "",
-        //   // link: "#"
-        // }
+        {
+          name: "Project Backlog",
+          type: "Document",
+          date: "February 2026",
+          link: "deliverables/ProjectBacklog.pdf"
+        },
+        {
+          name: "Sprint 1 Backlog",
+          type: "Document",
+          date: "February 2026",
+          link: "deliverables/Sprint1Blacklog.pdf"
+        },
+        {
+          name: "Sprint 1 Planning Document",
+          type: "Document",
+          date: "February 2026",
+          link: "deliverables/Sprint1PlanningDoc.pdf"
+        }
       ]
     },
     // {
