@@ -130,6 +130,7 @@
 
 .btn-github {
   background-color: #6CC644;
+  border: #6CC644, 2px solid;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -137,7 +138,6 @@
 
 .btn-github:hover {
   background-color: #1b1f23;
-  border: #6CC644, 2px solid;
 }
 
 .btn {

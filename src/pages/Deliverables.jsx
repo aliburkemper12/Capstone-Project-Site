@@ -22,7 +22,7 @@ function Deliverables() {
           name: "Sprint 1 Backlog",
           type: "Document",
           date: "February 2026",
-          link: "deliverables/Sprint1Blacklog.pdf"
+          link: "deliverables/Sprint1Backlog.pdf"
         },
         {
           name: "Sprint 1 Planning Document",
