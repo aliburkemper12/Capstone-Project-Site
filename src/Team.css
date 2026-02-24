@@ -101,6 +101,9 @@
   .team-grid {
     grid-template-columns: 1fr;
   }
+  .team-grid2 {
+    grid-template-columns: 1fr;
+  }
 
   .member-photo {
     width: 120px;

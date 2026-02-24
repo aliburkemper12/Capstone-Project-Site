@@ -10,7 +10,7 @@ function Home() {
         <h1 className="hero-title">Exploring Low Cost EEG-Based Error Potentials</h1>
         <p className="hero-subtitle">CS-495 Capstone Project</p>
         <div className="hero-image">
-          <img src={`${import.meta.env.BASE_URL}eeg.jpg`} alt="Project overview" />        </div>
+          <img src={`${import.meta.env.BASE_URL}eeg.png`} alt="Project overview" />        </div>
       </div>
 
       <div className="content-section">
@@ -19,7 +19,7 @@ function Home() {
           <div className="goals-content">
             <p className="goal-description">
               Currently, there are limited affordable solutions for <b>EEG-based error potential detection. </b>
-              This project aims to build a <b>low-cost framework</b> that integrates basic EEG processing and Machine Learning for studies involving error potentials.
+              This project aims to build a <b>low-cost framework</b> that integrates basic EEG processing and ErrP dataset creation for studies involving error potentials.
             </p>
             
             <div className="goals-list">
@@ -27,7 +27,7 @@ function Home() {
                 <div className="goal-number">1</div>
                 <div>
                   <h3>Sprint 1</h3>
-                  <p>Plot and visualize Error Potentials; Load and filter EEG data</p>
+                  <p>Plot and visualize Error Potentials in a GUI; Load and filter EEG data.</p>
                 </div>
               </div>
               
@@ -35,7 +35,7 @@ function Home() {
                 <div className="goal-number">2</div>
                 <div>
                   <h3>Sprint 2</h3>
-                  <p>Achieve being able to identify/define Error Potentials.</p>
+                  <p>Dataset creation via built-in Flanker task.</p>
                 </div>
               </div>
               
@@ -43,7 +43,7 @@ function Home() {
                 <div className="goal-number">3</div>
                 <div>
                   <h3>Sprint 3</h3>
-                  <p>Create or utilize an existing flanker task tool to collect EEG data and visualize the Error Potentials.</p>
+                  <p>Deploy as fully functional app with enhanced data processing/visualizing capabilities.</p>
                 </div>
               </div>
             </div>

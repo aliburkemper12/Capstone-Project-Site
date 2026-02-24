@@ -37,7 +37,6 @@ function Team() {
       email: "arsteffey@crimson.ua.edu",
       photo: ASHeadshot
     },
-    
   ];
 
   return (

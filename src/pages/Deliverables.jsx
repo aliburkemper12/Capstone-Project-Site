@@ -51,7 +51,7 @@ function Deliverables() {
     //   ]
     // },
     // {
-    //   number: 2,
+    //   number: 3,
     //   title: "Sprint 3 - Flanker Task Tool and Data Visualization",
     //   deliverables: [
     //     {
