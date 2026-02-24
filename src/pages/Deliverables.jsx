@@ -29,6 +29,12 @@ function Deliverables() {
           type: "Document",
           date: "February 2026",
           link: "deliverables/Sprint1PlanningDocument.pdf"
+        },
+        {
+          name: "Sprint 1 Scrum Jorunal",
+          type: "Document",
+          date: "February 2026",
+          link: "deliverables/Sprint1DailyJournal.docx"
         }
       ]
     },
