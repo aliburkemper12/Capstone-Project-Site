@@ -13,6 +13,12 @@ function Deliverables() {
           link: "deliverables/EEGPrelimPres.pptx.pdf"
         },
         {
+          name: "Sprint 1 Presentation",
+          type: "Presentation",
+          date: "February 2026",
+          link: "deliverables/Sprint1Presentation.pdf"
+        },
+        {
           name: "Project Backlog",
           type: "Document",
           date: "February 2026",
@@ -38,18 +44,36 @@ function Deliverables() {
         }
       ]
     },
-    // {
-    //   number: 2,
-    //   title: "Sprint 2 - Real Time ERP Detection",
-    //   deliverables: [
-    //     {
-    //       // name: "Progress Presentation",
-    //       // type: "Presentation",
-    //       // date: "",
-    //       // link: "#"
-    //     }
-    //   ]
-    // },
+    {
+      number: 2,
+      title: "Sprint 2 - Further application development",
+      deliverables: [
+        {
+          name: "Sprint 2 Presentation",
+          type: "Presentation",
+          date: "March 2026",
+          link: "#"
+        },
+        {
+          name: "Project Backlog",
+          type: "Document",
+          date: "March 2026",
+          link: "deliverables/ProjectBacklogSprint2.pdf"
+        },
+        {
+          name: "Sprint 2 Backlog",
+          type: "Document",
+          date: "March 2026",
+          link: "deliverables/Sprint2GoalBacklog.pdf"
+        },
+        {
+          name: "Sprint 2 Planning Document",
+          type: "Document",
+          date: "March 2026",
+          link: "deliverables/Sprint2PlanningDocument.pdf"
+        },
+      ]
+    },
     // {
     //   number: 3,
     //   title: "Sprint 3 - Flanker Task Tool and Data Visualization",
