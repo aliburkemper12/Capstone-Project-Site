@@ -52,7 +52,7 @@ function Deliverables() {
           name: "Sprint 2 Presentation",
           type: "Presentation",
           date: "March 2026",
-          link: "#"
+          link: "deliverables/Sprint2Presentation.pptx"
         },
         {
           name: "Project Backlog",
