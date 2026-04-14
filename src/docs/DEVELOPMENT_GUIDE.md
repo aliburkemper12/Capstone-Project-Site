@@ -6,7 +6,7 @@ This section is intended for developers who want to modify, extend, or contribut
 
 ## Language and Compiler
 
-The project is written entirely in **Python 3.13**. Python is an interpreted language and does not require a compiler. The application is run directly through the Python interpreter via uv (see setup instructions in the README). If creating a standalone executable, PyInstaller compiles the application into a binary — see the [Building an Executable](#building-an-executable) section of the README.
+The project is written entirely in **Python 3.13**. Python is an interpreted language and does not require a compiler. The application is run directly through the Python interpreter via uv (see setup instructions in the README). If creating a standalone executable, PyInstaller compiles the application into a binary — see the section of the README.
 
 ---
 
@@ -136,15 +136,13 @@ uv run pytest
 
 ---
 
-## Known Issues and Future Work
+## Known Issues
 
 ### ⚠ EEG Signal Quality — High Priority
 
-The current EEG recording pipeline produces **raw, unprocessed data** that is typically too noisy to clearly resolve ErrP components (ERN and Pe). While the converter applies a basic bandpass filter (0.1–30 Hz) and notch filter (60 Hz) during conversion, the following improvements are needed before reliable ErrP detection is achievable:
+The current EEG recording pipeline produces **raw, unprocessed data** that is typically too noisy to clearly resolve ErrP components (ERN and Pe). The following improvements are needed before reliable ErrP detection is achievable:
 
 - **Artifact rejection is rudimentary** — the current 100 µV peak-to-peak threshold is a blunt instrument. Independent Component Analysis (ICA) would allow systematic removal of eye blink and muscle artifacts while preserving brain signal.
 - **No re-referencing** — the signal is referenced to a single earlobe electrode. Average reference or linked mastoid reference would improve signal quality.
 - **No trial-type separation** — all trials (correct and error) are currently averaged together, which dilutes the ErrP. The pipeline should be extended to epoch error trials and correct trials separately so they can be compared. The ErrP is only present in error trials.
 - **Low channel count** — with 3–4 forehead electrodes the spatial resolution is very limited. A full 8–16 channel setup with proper scalp placement would yield substantially cleaner data.
-
-The recommended path forward is to integrate **[MNE-Python](https://mne.tools/)**, a well-maintained open-source EEG analysis library that provides ICA, re-referencing, advanced artifact rejection, and proper epoch averaging out of the box. The current custom `data_loader.py` and `data_processor.py` were written to avoid the MNE dependency for simplicity, but MNE is the correct long-term solution for a production ErrP pipeline.
