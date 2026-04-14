@@ -92,7 +92,7 @@ function Deliverables() {
     <div className="deliverables">
       <div className="page-header">
         <h1>Project Deliverables</h1>
-        <p>All presentations and documents organized by sprint</p>
+        <p>All sprint presentations and documents</p>
       </div>
 
       <div className="content-section">

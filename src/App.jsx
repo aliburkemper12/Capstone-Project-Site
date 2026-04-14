@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Deliverables from './pages/Deliverables';
 import Team from './pages/Team';
+import Documentation from './pages/Documentation';
 import './App.css';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
                 <Link to="/deliverables" className="nav-link">Deliverables</Link>
               </li>
               <li className="nav-item">
+                <Link to="/documentation" className="nav-link">Documentation</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/team" className="nav-link">Team</Link>
               </li>
             </ul>
@@ -31,6 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/deliverables" element={<Deliverables />} />
+            <Route path="/documentation" element={<Documentation />} />
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>
