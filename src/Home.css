@@ -166,6 +166,12 @@
   border: 2px solid white;
 }
 
+.btn-youtube {
+  background-color: #FF0000;
+  border: #FF0000, 2px solid;
+  color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {

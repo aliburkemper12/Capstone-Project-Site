@@ -81,6 +81,14 @@ function Home() {
               <FaGithub style={{ marginRight: "8px" }} />
               View GitHub Repo
             </a>
+            <a
+              href="https://youtu.be/vCeJXkBbpe4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-youtube"
+            >
+              Project Demo Video
+            </a>
           </div>
         </div>
       </div>
