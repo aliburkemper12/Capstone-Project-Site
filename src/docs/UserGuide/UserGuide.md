@@ -20,7 +20,7 @@ The ErrP Visualizer lets you record EEG during a Flanker task (a paradigm that r
 
 When the app launches you see the main window:
 
-![Main window overview](src/docs/UserGuide/images/main_window.png)
+![Main window overview](./src/docs/UserGuide/images/main_window.png)
 
 Key regions:
 
@@ -66,7 +66,7 @@ Power on the Ganglion and wait until its LED is **blinking blue** before continu
 
 ### Setup Page
 
-![Flanker task setup page](src/docs/UserGuide/images/flanker_setup.png)
+![Flanker task setup page](./src/docs/UserGuide/images/flanker_setup.png)
 
 1. **Serial Port** — select the port your USB dongle is on. Use the **↺** button to refresh the list.
    - macOS ports look like `/dev/cu.usbmodem11` or `/dev/cu.usbserial-XXXXXXXX`.
@@ -83,7 +83,7 @@ Power on the Ganglion and wait until its LED is **blinking blue** before continu
 
 Each tab has its own Graph Options panel on the right-hand side.
 
-![Graph options panel](src/docs/UserGuide/images/graph_options.png)
+![Graph options panel](./src/docs/UserGuide/images/graph_options.png)
 
 | Control | Purpose |
 
@@ -115,19 +115,19 @@ Each tab has its own Graph Options panel on the right-hand side.
 
 The averaged ERP waveform over time. This is the best view for inspecting the ERN and Pe components and for comparing specific channels. Selecting channels in the Sensor(s) dropdown restricts the plot to just those traces. Enabling **Display Events and Responses** shades the ERN and Pe windows.
 
-![ErrP Time Series example](src/docs/UserGuide/images/errp_time_series.png)
+![ErrP Time Series example](./src/docs/UserGuide/images/errp_time_series.png)
 
 ### 6b. Topographic Map
 
 A scalp-voltage map at up to three time points, showing the spatial distribution of activity. Choose the sample times with **Topomap times (ms)**. Switch **Topomap Mode** to **Animated** to scrub through the full epoch using the slider or play it back continuously.
 
-![Topographic map example](src/docs/UserGuide/images/topomap.png)
+![Topographic map example](./src/docs/UserGuide/images/topomap.png)
 
 ### 6c. Joint Maps
 
 The time series and topographic snapshots combined into a single figure — useful for a one-glance overview. Topomap times outside the current epoch window appear as *Out of range* placeholders.
 
-![Joint maps example](src/docs/UserGuide/images/joint_maps.png)
+![Joint maps example](./src/docs/UserGuide/images/joint_maps.png)
 
 ---
 
