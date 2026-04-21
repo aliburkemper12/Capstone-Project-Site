@@ -6,7 +6,7 @@ import developmentContent from "/src/docs/DEVELOPMENT_GUIDE.md?raw";
 import installationContent from "/src/docs/installation_and_deployment_guide.md?raw";
 import userGuideContent from "/src/docs/UserGuide/UserGuide.md?raw";
 import faqsContent from "/src/docs/FAQs+Gotchas.md?raw";
-import testingContent from "/src/docs/testing.md?raw";
+import testingContent from "/src/docs/Testing.md?raw";
 
 const sections = [
   { id: "installation",       label: "Installation",        content: installationContent },
