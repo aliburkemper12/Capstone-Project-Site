@@ -43,7 +43,7 @@ function Team() {
     <div className="team">
       <div className="page-header">
         <h1>Meet Our Team</h1>
-        <p>The talented individuals behind this project</p>
+        <p>The individuals behind this project</p>
       </div>
 
       <div className="content-section">

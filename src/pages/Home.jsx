@@ -8,7 +8,7 @@ function Home() {
     <div className="home">
       <div className="hero-section">
         <h1 className="hero-title">Exploring Low Cost EEG-Based Error Potentials</h1>
-        <p className="hero-subtitle">CS-495 Capstone Project</p>
+        <p className="hero-subtitle">University of Alabama CS-495 Capstone Project</p>
         <div className="hero-image">
           <img src={`${import.meta.env.BASE_URL}eeg.png`} alt="Project overview" />        </div>
       </div>
@@ -18,8 +18,18 @@ function Home() {
           <h2 className="section-title">Project Goals</h2>
           <div className="goals-content">
             <p className="goal-description">
-              Currently, there are limited affordable solutions for <b>EEG-based error potential detection. </b>
-              This project aims to build a <b>low-cost framework</b> that integrates basic EEG processing and ErrP dataset creation for studies involving error potentials.
+            Our team built a <b>low-cost, end-to-end ErrP research framework</b> using the 
+            OpenBCI Ganglion — a consumer-grade EEG headset — paired with a custom 
+            <b> native desktop application</b> for data collection and visualization.
+
+            The app includes a built-in <b>Flanker Task</b> that streams live EEG at 200Hz, 
+            automatically stamps event markers at stimulus onset and response, then 
+            exports a csv dataset ready for analysis. The signal pipeline epochs each trial together and converts to .set for visualization.
+
+            Recorded files — or any external <b>EEGLAB .set dataset</b> — can be visualized 
+            through an interactive interface featuring ERP time series plots, topographic 
+            maps, and joint map views. The goal: make ErrP research accessible without 
+            expensive lab equipment, proprietary software, or numerous dependencies.
             </p>
             
             <div className="goals-list">
@@ -35,7 +45,7 @@ function Home() {
                 <div className="goal-number">2</div>
                 <div>
                   <h3>Sprint 2</h3>
-                  <p>Dataset creation via built-in Flanker task.</p>
+                  <p>Expand graphical capabilities and csv to .set file conversion.</p>
                 </div>
               </div>
               
@@ -43,7 +53,7 @@ function Home() {
                 <div className="goal-number">3</div>
                 <div>
                   <h3>Sprint 3</h3>
-                  <p>Deploy as fully functional app with enhanced data processing/visualizing capabilities.</p>
+                  <p>Implement a built in flanker task with EEG recording via openBCI's ganglion board.</p>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ This section is intended for developers who want to modify, extend, or contribut
 
 ## Language and Compiler
 
-The project is written entirely in **Python 3.13**. Python is an interpreted language and does not require a compiler. The application is run directly through the Python interpreter via uv (see setup instructions in the README). If creating a standalone executable, PyInstaller compiles the application into a binary — see the section of the README.
+The project is written entirely in **Python 3.10 >**. Python is an interpreted language and does not require a compiler. The application is run directly through the Python interpreter via uv (see setup instructions in the README). If creating a standalone executable, PyInstaller compiles the application into a binary — see the section of the README.
 
 ---
 
@@ -34,15 +34,27 @@ All dependencies are declared in **`pyproject.toml`** in the project root. The l
 **Core dependencies:**
 
 | Package | Purpose |
+
+
 |---|---|
+
+
 | `PyQt5` | GUI framework — all windows, widgets, dialogs |
+
 | `matplotlib` | EEG waveform and topomap plotting |
+
 | `numpy` | Array operations, signal math |
+
 | `scipy` | Bandpass/notch filtering, `.mat`/`.set` file I/O |
+
 | `pandas` | CSV reading during Ganglion data conversion |
+
 | `brainflow` | OpenBCI Ganglion EEG streaming and marker injection |
+
 | `pyserial` | Serial port detection for the Ganglion dongle |
+
 | `pyinstaller` | Building standalone executables |
+
 | `markdown` | Rendering the README in the Help dialog |
 
 ---
@@ -68,9 +80,9 @@ CS495-EEG-Based-Error-Potentials/
 │   │   └── eeg_recorder.py              # Brainflow streaming thread
 │   └── data_visualization/
 │       └── visualizer.py                # matplotlib plot functions (stateless)
-├── pyproject.toml                        # dependencies
-├── uv.lock                               # locked dependency versions
-├── ErrPVisualizer.spec                   # PyInstaller build configuration
+├── pyproject.toml                       # dependencies
+├── uv.lock                              # locked dependency versions
+├── ErrPVisualizer.spec                  # PyInstaller build configuration
 └── README.md
 ```
 
@@ -108,41 +120,13 @@ The task logic lives entirely in `src/gui/flanker_window.py`. Timing constants (
 
 ---
 
-## Backlog and Bug Tracking
-
-Sprint backlogs and known issues are tracked on the **[project site](https://aliburkemper12.github.io/Capstone-Project-Site/#/)** under the backlog section for each sprint. This is the authoritative source for planned work and open issues.
-
----
-
-## Testing
-
-There is currently no automated test suite. Testing is performed manually by running the application and exercising features directly. 
-
-**Key manual test scenarios:**
-
-- Load a `.set` file and verify all three graph types render correctly
-- Load a `.csv` file and verify it converts and visualizes without error
-- Run the Flanker task with the Ganglion disconnected and verify the error message is shown gracefully
-- Run the Flanker task end to end with the Ganglion connected and verify the output file loads in the visualizer
-- Toggle dark mode and verify all UI elements and plots update correctly
-- Open the Help dialog and verify the README loads from GitHub
-
-Automated testing is a known gap. Future contributors should consider adding unit tests for the data processing layer (`data_loader.py`, `data_processor.py`) using **pytest**, which is the standard Python testing framework and integrates well with uv:
-
-```bash
-uv add --dev pytest
-uv run pytest
-```
-
----
-
 ## Known Issues
 
 ### ⚠ EEG Signal Quality — High Priority
 
 The current EEG recording pipeline produces **raw, unprocessed data** that is typically too noisy to clearly resolve ErrP components (ERN and Pe). The following improvements are needed before reliable ErrP detection is achievable:
 
-- **Artifact rejection is rudimentary** — the current 100 µV peak-to-peak threshold is a blunt instrument. Independent Component Analysis (ICA) would allow systematic removal of eye blink and muscle artifacts while preserving brain signal.
-- **No re-referencing** — the signal is referenced to a single earlobe electrode. Average reference or linked mastoid reference would improve signal quality.
+- **No Artifact Rejection** — currently our application does not filter for artifacts such as eye blinks or head movement.
+- **No Filtering** — currently our application also deos not filter for environment noise.
 - **No trial-type separation** — all trials (correct and error) are currently averaged together, which dilutes the ErrP. The pipeline should be extended to epoch error trials and correct trials separately so they can be compared. The ErrP is only present in error trials.
 - **Low channel count** — with 3–4 forehead electrodes the spatial resolution is very limited. A full 8–16 channel setup with proper scalp placement would yield substantially cleaner data.

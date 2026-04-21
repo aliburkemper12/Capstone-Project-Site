@@ -1,6 +1,12 @@
 .documentation {
     width: 100%;
   }
+
+  img {
+    max-width: 900px;
+    height: auto;
+    max-height: 500px;
+  }
   
   /* Top Nav */
   .doc-nav {

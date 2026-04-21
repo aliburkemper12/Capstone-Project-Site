@@ -74,18 +74,36 @@ function Deliverables() {
         },
       ]
     },
-    // {
-    //   number: 3,
-    //   title: "Sprint 3 - Flanker Task Tool and Data Visualization",
-    //   deliverables: [
-    //     {
-    //       // name: "Progress Presentation",
-    //       // type: "Presentation",
-    //       // date: "",
-    //       // link: "#"
-    //     }
-    //   ]
-    // },
+    {
+      number: 3,
+      title: "Sprint 3 - Flanker Task Tool and EEG Recording",
+      deliverables: [
+        {
+          name: "Sprint 3 Planning Document",
+          type: "Document",
+          date: "April 2026",
+          link: "deliverables/Sprint3PlanningDocument.pdf"
+        },
+        {
+          name: "Sprint 3 Project Backlog",
+          type: "Document",
+          date: "April 2026",
+          link: "deliverables/Sprint3ProjectBacklog.xlsx"
+        },
+        {
+          name: "Sprint 3 Sprint Backlog",
+          type: "Document",
+          date: "April 2026",
+          link: "deliverables/Sprint3GoalBacklog.docx"
+        },
+        {
+          name: "Sprint 3 Presentation",
+          type: "Document",
+          date: "April 2026",
+          link: "deliverables/Sprint3Presentation.pdf"
+        },
+      ]
+    },
   ];
 
   return (
